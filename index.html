@@ -5,79 +5,154 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        *{background-color: black;}
-        .container {
-            text-align: center;
-        }
-    
-        .topnav {
-            display:flex;
-            justify-content: right;
-        }
-    
-        .topnav a {
-            padding: 14px 16px;
-            text-decoration: none;
-            color: #db9e19;
-            font-size: 18px;
-            display: inline-block;
-        }
-    
-        body{
-            background-repeat: no-repeat;
-        }
         h1{
-            font-size: larger;
-            font-style: italic;
+            letter-spacing: 10px;
+            text-transform: uppercase;
+            color: chocolate;
         }
         h2{
-            font-size: 50px;
-            font-style: italic;
+            letter-spacing: 10px;
+            text-transform: lowercase;
         }
-        img{
-            height: 700px;
+        p{
+            text-align: justify;
+            text-indent: 120px;
+            line-height: 50px;
+            word-spacing: 20px;
+        }
+        a:link{
+            color: red;
+            text-decoration: none;
+            background-color: yellow;
+            border-radius: 10px;
+            padding: 10px;
+        }
+        a:hover{
+            background-color: aquamarine;
+        }
+        a{
+            color: yellow;
+            text-decoration: none;
+            background-color: green;
+            border-radius: 20px;
+            padding: 5px;
+            margin: 10px;
         }
         div{
-            text-align: center;
-            font-size: 30px;
+            display: flex;
+            justify-content: center;
         }
-        button{
-            color: chartreuse;
-            width: 200px;
-            height: 50px;
-            color: rgb(231, 240, 240);
-            align-items: center;
-            margin-left: 650px;
+        img{
+            border-radius: 50%;
+        }
+        img:hover{
+            width: 275px;
+            height: 350px;
+        }
+        biv{
+            border-radius: 50%;
+            justify-content: center;
+            display: flex;
+        }
+        @keyframes anim{
+            from{
+                background-color: pink;
+            }
+            to{
+                background-color: rgb(30, 185, 108);
+            }
+        }
+        .div1{
+            height: auto;
+            width: auto;
+            background-color: yellow;
+            animation-name: anim;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-delay: 3s;
+        }
+        td{
+            border: 5px solid rebeccapurple;
+        }
+        table{
+            border: 2px solid orange;
+        }
+        #id1{
+            height: auto;
+            width: auto;
+            animation-name: anim1;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-delay: 3s;
+        }
+        @keyframes anim1{
+            from{
+                font-size: larger;
+            }
+            to{
+                font-size: small;
+            }
         }
     </style>
 </head>
-<body style=>
-    <div class="container">
-        <div class = "topnav">
-            <a class="active" href="#Oracle GloriaFood ">ORACLE GloriaFood</a>
-            <a class="active" href="#Home">Home</a>
-            <a class="active" href="#about us">About us</a>
-            <a class="active" href="#Food Ordering">Food Ordering</a>
-            <a class="active" href="#Restaurant Services">Restaurant Services</a>
-            <a class="active" href="#Pricing">Pricing</a>
-            <a class="active" href="#LOG IN">LOG IN</a>
-            <a class="active" href="#Get Access Now">Get Access Now
-            </a>
-        </div>
-    </div>
-    <h2 style="color: chocolate;">Pizza Ordering System</h2>
-    <h1 style="color: rgb(252, 248, 247);">Free online orders from your pizzeria’s website and Facebook page
-    </h1>
-    <h3 style="color: rgb(250, 248, 246);">The online ordering system built for pizza places and restaurants</h3>
-    <h1 style="color: rgb(255, 254, 253);">This online ordering software was built with strong focus on the needs of pizza restaurants.</h1>
-    <h1 style="color: rgb(250, 249, 249);">From menu to promotions and delivery settings, we’re very confident that you’ll find all that you need to run a successful business online.</h1>
-    <img src="https://www.gloriafood.com/assets/gloriafood/img/pizza_ordering_system/image1-453407db4e.png.webp" alt="">
-    <img src="https://www.gloriafood.com/assets/gloriafood/img/pizza_ordering_system/image1-453407db4e.png.webp" alt="">
+<body>`
+    <h1 style="font-style: italic;">Welcome to Zeal</h1>
+    <h2>Welcome to CS Department</h2>
+    <hr>
+    <p>
+        Developed by Sun Microsystems in 1995, Java is a highly popular, object-oriented programming language. 
+        This platform independent programming language is utilized for Android development, web development, 
+        artificial intelligence, cloud applications, and much more.
+        <br>
+        In this tutorial, we will cover everything from the basics of Java syntax to advanced topics like 
+        object-oriented programming and exception handling. So, by the end of this tutorial, you will have a strong understanding of 
+        Java and be ready to start writing your own Java applications. So let’s get started on this comprehensive Java programming tutorial!
+    </p>
+    <a href="index_02.html">Click Here</a>
+    <hr>
+    <br>
     <div>
-        <h1 style="color: azure;">Take your first online pizza order today</h1>
+        <a href="#">HOME</a>
+        <a href="#">Contact</a>
+        <a href="#">Log in</a>
+        <a href="#">Menu</a>
     </div>
-    <body>
-        <button>Order Now</button>
-    </body>
+    
+    <div class = "biv">
+        <img src="images/images.jpeg" alt="">
+    </div>
+
+    <br>
+    
+    <div class = "div1">
+        <h1 id="id1">King Kohli</h1>
+
+    </div>
+    <table>
+        <tr>
+            <td>data</td>
+            <td>data</td>
+            <td>data</td>
+            <td>data</td>
+        </tr>
+        <tr>
+            <td>data</td>
+            <td>data</td>
+            <td>data</td>
+            <td>data</td>
+        </tr>
+        <tr>
+            <td>data</td>
+            <td>data</td>
+            <td>data</td>
+            <td>data</td>
+        </tr>
+        <tr>
+            <td>data</td>
+            <td>data</td>
+            <td>data</td>
+            <td>data</td>
+        </tr>
+    </table>
 </body>
 </html>
